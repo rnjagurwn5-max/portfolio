@@ -850,6 +850,37 @@ h1,h2,h3,h4,.q,.bigconcl,.ab-card h3{word-break:keep-all}
 .pj.t-blueocean p.one b{color:#3DD9EB}
 .pj.t-matchjuo p.one b{color:#7C3AED}
 .pj.t-reboot p.one b,.pj:not([class*="t-"]) p.one b{color:var(--lime)}
+/* ===== 첫 페이지 (전문적인 카드) ===== */
+.home-pj{padding:72px 0 88px}
+.hp-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;padding-bottom:22px;margin-bottom:32px;border-bottom:1px solid var(--line-dark)}
+.hp-eyebrow{font-family:var(--font-mono);font-size:12px;letter-spacing:.14em;color:var(--muted-dark)}
+.hp-head h2{font-size:clamp(24px,2.8vw,34px);font-weight:700;margin-top:8px;letter-spacing:-.01em}
+.hp-count{font-family:var(--font-mono);font-size:13px;color:var(--muted-dark);white-space:nowrap}
+.pcs{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.pc{display:flex;flex-direction:column;text-decoration:none;color:inherit;background:#232620;border:1px solid #33372D;border-radius:14px;overflow:hidden;transition:border-color .2s,transform .2s,box-shadow .2s}
+.pc:hover{border-color:var(--pc);transform:translateY(-3px);box-shadow:0 24px 48px -28px rgba(0,0,0,.9)}
+.pc:focus-visible{outline:2px solid var(--pc);outline-offset:3px}
+.pc-thumb{position:relative;aspect-ratio:16/8.4;overflow:hidden;border-bottom:1px solid #33372D}
+.pc-thumb img{width:100%;height:100%;object-position:top left;transition:transform .5s}
+.pc:hover .pc-thumb img{transform:scale(1.03)}
+.pc-thumb::after{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:var(--pc)}
+.pc-badge{position:absolute;right:14px;top:14px;font-size:12px;font-weight:700;background:rgba(20,22,18,.86);color:#fff;border:1px solid var(--pc);border-radius:999px;padding:4px 11px;backdrop-filter:blur(6px)}
+.pc-body{padding:22px 24px 20px;display:flex;flex-direction:column;flex:1}
+.pc-meta{display:flex;align-items:center;gap:10px;font-size:12.5px;color:var(--muted-dark)}
+.pc-n{font-family:var(--font-mono);color:var(--pc);font-weight:500}
+.pc-date{margin-left:auto;font-family:var(--font-mono);font-size:12px}
+.pc h3{font-family:var(--font-body);font-size:24px;font-weight:700;letter-spacing:-.01em;margin:8px 0 10px;color:#fff}
+.pc-one{font-size:15px;line-height:1.65;color:#B9BCAE}
+.pc-one b{color:#F1F2EC;font-weight:700}
+.pc-kpis{display:grid;grid-template-columns:1fr 1fr;margin-top:18px;border-top:1px solid #33372D;border-bottom:1px solid #33372D}
+.pc-kpis div{padding:14px 0}
+.pc-kpis div+div{padding-left:18px;border-left:1px solid #33372D}
+.pc-kpis b{display:block;font-size:24px;font-weight:700;color:var(--pc);letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.pc-kpis span{display:block;font-size:12.8px;color:var(--muted-dark);margin-top:2px}
+.pc-foot{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:auto;padding-top:16px;font-size:12.8px;color:var(--muted-dark)}
+.pc-go{color:#F1F2EC;font-weight:700;font-size:13.5px;white-space:nowrap}
+.pc:hover .pc-go{color:var(--pc)}
+@media (max-width:860px){.pcs{grid-template-columns:1fr}.hp-head{flex-direction:column;align-items:flex-start}.pc-foot{flex-direction:column;align-items:flex-start}}
 
 #v-pursight{
   
@@ -1649,6 +1680,36 @@ h1,h2,h3,h4,.q,.bigconcl,.ab-card h3{word-break:keep-all}
 #v-pursight .pj.t-blueocean p.one b{color:#3DD9EB}
 #v-pursight .pj.t-matchjuo p.one b{color:#7C3AED}
 #v-pursight .pj.t-reboot p.one b,#v-pursight .pj:not([class*="t-"]) p.one b{color:var(--lime)}
+#v-pursight .home-pj{padding:72px 0 88px}
+#v-pursight .hp-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;padding-bottom:22px;margin-bottom:32px;border-bottom:1px solid var(--line-dark)}
+#v-pursight .hp-eyebrow{font-family:var(--font-mono);font-size:12px;letter-spacing:.14em;color:var(--muted-dark)}
+#v-pursight .hp-head h2{font-size:clamp(24px,2.8vw,34px);font-weight:700;margin-top:8px;letter-spacing:-.01em}
+#v-pursight .hp-count{font-family:var(--font-mono);font-size:13px;color:var(--muted-dark);white-space:nowrap}
+#v-pursight .pcs{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+#v-pursight .pc{display:flex;flex-direction:column;text-decoration:none;color:inherit;background:#232620;border:1px solid #33372D;border-radius:4px;overflow:hidden;transition:border-color .2s,transform .2s,box-shadow .2s}
+#v-pursight .pc:hover{border-color:var(--pc);transform:translateY(-3px);box-shadow:0 24px 48px -28px rgba(0,0,0,.9)}
+#v-pursight .pc:focus-visible{outline:2px solid var(--pc);outline-offset:3px}
+#v-pursight .pc-thumb{position:relative;aspect-ratio:16/8.4;overflow:hidden;border-bottom:1px solid #33372D}
+#v-pursight .pc-thumb img{width:100%;height:100%;object-position:top left;transition:transform .5s}
+#v-pursight .pc:hover .pc-thumb img{transform:scale(1.03)}
+#v-pursight .pc-thumb::after{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:var(--pc)}
+#v-pursight .pc-badge{position:absolute;right:14px;top:14px;font-size:12px;font-weight:700;background:rgba(20,22,18,.86);color:#1C2A38;border:1px solid var(--pc);border-radius:999px;padding:4px 11px;backdrop-filter:blur(6px)}
+#v-pursight .pc-body{padding:22px 24px 20px;display:flex;flex-direction:column;flex:1}
+#v-pursight .pc-meta{display:flex;align-items:center;gap:10px;font-size:12.5px;color:var(--muted-dark)}
+#v-pursight .pc-n{font-family:var(--font-mono);color:var(--pc);font-weight:500}
+#v-pursight .pc-date{margin-left:auto;font-family:var(--font-mono);font-size:12px}
+#v-pursight .pc h3{font-family:var(--font-body);font-size:24px;font-weight:700;letter-spacing:-.01em;margin:8px 0 10px;color:#1C2A38}
+#v-pursight .pc-one{font-size:15px;line-height:1.65;color:#6E6759}
+#v-pursight .pc-one b{color:#1F2328;font-weight:700}
+#v-pursight .pc-kpis{display:grid;grid-template-columns:1fr 1fr;margin-top:18px;border-top:1px solid #33372D;border-bottom:1px solid #33372D}
+#v-pursight .pc-kpis div{padding:14px 0}
+#v-pursight .pc-kpis div+div{padding-left:18px;border-left:1px solid #33372D}
+#v-pursight .pc-kpis b{display:block;font-size:24px;font-weight:700;color:var(--pc);letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+#v-pursight .pc-kpis span{display:block;font-size:12.8px;color:var(--muted-dark);margin-top:2px}
+#v-pursight .pc-foot{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:auto;padding-top:16px;font-size:12.8px;color:var(--muted-dark)}
+#v-pursight .pc-go{color:#1F2328;font-weight:700;font-size:13.5px;white-space:nowrap}
+#v-pursight .pc:hover .pc-go{color:var(--pc)}
+@media (max-width:860px){#v-pursight .pcs{grid-template-columns:1fr}#v-pursight .hp-head{flex-direction:column;align-items:flex-start}#v-pursight .pc-foot{flex-direction:column;align-items:flex-start}}
 #v-pursight{--font-display:"Space Grotesk","IBM Plex Sans KR",sans-serif;color-scheme:light}
 #v-pursight .light{color-scheme:dark}
 #v-pursight .hero::before{inset:0;height:auto;background-image:linear-gradient(#E9E4D8 1px,transparent 1px),linear-gradient(90deg,#E9E4D8 1px,transparent 1px);background-size:96px 30px;-webkit-mask-image:linear-gradient(100deg,transparent 35%,#000 85%);mask-image:linear-gradient(100deg,transparent 35%,#000 85%)}
@@ -2472,6 +2533,36 @@ h1,h2,h3,h4,.q,.bigconcl,.ab-card h3{word-break:keep-all}
 #v-blueocean .pj.t-blueocean p.one b{color:#3DD9EB}
 #v-blueocean .pj.t-matchjuo p.one b{color:#7C3AED}
 #v-blueocean .pj.t-reboot p.one b,#v-blueocean .pj:not([class*="t-"]) p.one b{color:var(--lime)}
+#v-blueocean .home-pj{padding:72px 0 88px}
+#v-blueocean .hp-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;padding-bottom:22px;margin-bottom:32px;border-bottom:1px solid var(--line-dark)}
+#v-blueocean .hp-eyebrow{font-family:var(--font-mono);font-size:12px;letter-spacing:.14em;color:var(--muted-dark)}
+#v-blueocean .hp-head h2{font-size:clamp(24px,2.8vw,34px);font-weight:700;margin-top:8px;letter-spacing:-.01em}
+#v-blueocean .hp-count{font-family:var(--font-mono);font-size:13px;color:var(--muted-dark);white-space:nowrap}
+#v-blueocean .pcs{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+#v-blueocean .pc{display:flex;flex-direction:column;text-decoration:none;color:inherit;background:#232620;border:1px solid #33372D;border-radius:21px;overflow:hidden;transition:border-color .2s,transform .2s,box-shadow .2s}
+#v-blueocean .pc:hover{border-color:var(--pc);transform:translateY(-3px);box-shadow:0 24px 48px -28px rgba(0,0,0,.9)}
+#v-blueocean .pc:focus-visible{outline:2px solid var(--pc);outline-offset:3px}
+#v-blueocean .pc-thumb{position:relative;aspect-ratio:16/8.4;overflow:hidden;border-bottom:1px solid #33372D}
+#v-blueocean .pc-thumb img{width:100%;height:100%;object-position:top left;transition:transform .5s}
+#v-blueocean .pc:hover .pc-thumb img{transform:scale(1.03)}
+#v-blueocean .pc-thumb::after{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:var(--pc)}
+#v-blueocean .pc-badge{position:absolute;right:14px;top:14px;font-size:12px;font-weight:700;background:rgba(20,22,18,.86);color:#fff;border:1px solid var(--pc);border-radius:999px;padding:4px 11px;backdrop-filter:blur(6px)}
+#v-blueocean .pc-body{padding:22px 24px 20px;display:flex;flex-direction:column;flex:1}
+#v-blueocean .pc-meta{display:flex;align-items:center;gap:10px;font-size:12.5px;color:var(--muted-dark)}
+#v-blueocean .pc-n{font-family:var(--font-mono);color:var(--pc);font-weight:500}
+#v-blueocean .pc-date{margin-left:auto;font-family:var(--font-mono);font-size:12px}
+#v-blueocean .pc h3{font-family:var(--font-body);font-size:24px;font-weight:700;letter-spacing:-.01em;margin:8px 0 10px;color:#fff}
+#v-blueocean .pc-one{font-size:15px;line-height:1.65;color:#A9BED0}
+#v-blueocean .pc-one b{color:#EAF3FA;font-weight:700}
+#v-blueocean .pc-kpis{display:grid;grid-template-columns:1fr 1fr;margin-top:18px;border-top:1px solid #33372D;border-bottom:1px solid #33372D}
+#v-blueocean .pc-kpis div{padding:14px 0}
+#v-blueocean .pc-kpis div+div{padding-left:18px;border-left:1px solid #33372D}
+#v-blueocean .pc-kpis b{display:block;font-size:24px;font-weight:700;color:var(--pc);letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+#v-blueocean .pc-kpis span{display:block;font-size:12.8px;color:var(--muted-dark);margin-top:2px}
+#v-blueocean .pc-foot{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:auto;padding-top:16px;font-size:12.8px;color:var(--muted-dark)}
+#v-blueocean .pc-go{color:#EAF3FA;font-weight:700;font-size:13.5px;white-space:nowrap}
+#v-blueocean .pc:hover .pc-go{color:var(--pc)}
+@media (max-width:860px){#v-blueocean .pcs{grid-template-columns:1fr}#v-blueocean .hp-head{flex-direction:column;align-items:flex-start}#v-blueocean .pc-foot{flex-direction:column;align-items:flex-start}}
 #v-blueocean{--font-display:"Sora","IBM Plex Sans KR",sans-serif}
 #v-blueocean .hero{background:linear-gradient(180deg,#071F36 0%,#061829 100%)}
 #v-blueocean .hero::before{inset:-20% -20% -20% 30%;height:auto;background:radial-gradient(closest-side at 70% 55%,rgba(61,217,235,.20),transparent 70%),repeating-radial-gradient(circle at 70% 55%,rgba(61,217,235,.09) 0 1px,transparent 1px 34px)}
@@ -3284,6 +3375,36 @@ h1,h2,h3,h4,.q,.bigconcl,.ab-card h3{word-break:keep-all}
 #v-matchjuo .pj.t-blueocean p.one b{color:#3DD9EB}
 #v-matchjuo .pj.t-matchjuo p.one b{color:#7C3AED}
 #v-matchjuo .pj.t-reboot p.one b,#v-matchjuo .pj:not([class*="t-"]) p.one b{color:var(--lime)}
+#v-matchjuo .home-pj{padding:72px 0 88px}
+#v-matchjuo .hp-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;padding-bottom:22px;margin-bottom:32px;border-bottom:1px solid var(--line-dark)}
+#v-matchjuo .hp-eyebrow{font-family:var(--font-mono);font-size:12px;letter-spacing:.14em;color:var(--muted-dark)}
+#v-matchjuo .hp-head h2{font-size:clamp(24px,2.8vw,34px);font-weight:700;margin-top:8px;letter-spacing:-.01em}
+#v-matchjuo .hp-count{font-family:var(--font-mono);font-size:13px;color:var(--muted-dark);white-space:nowrap}
+#v-matchjuo .pcs{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+#v-matchjuo .pc{display:flex;flex-direction:column;text-decoration:none;color:inherit;background:#232620;border:1px solid #33372D;border-radius:21px;overflow:hidden;transition:border-color .2s,transform .2s,box-shadow .2s}
+#v-matchjuo .pc:hover{border-color:var(--pc);transform:translateY(-3px);box-shadow:0 24px 48px -28px rgba(0,0,0,.9)}
+#v-matchjuo .pc:focus-visible{outline:2px solid var(--pc);outline-offset:3px}
+#v-matchjuo .pc-thumb{position:relative;aspect-ratio:16/8.4;overflow:hidden;border-bottom:1px solid #33372D}
+#v-matchjuo .pc-thumb img{width:100%;height:100%;object-position:top left;transition:transform .5s}
+#v-matchjuo .pc:hover .pc-thumb img{transform:scale(1.03)}
+#v-matchjuo .pc-thumb::after{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:var(--pc)}
+#v-matchjuo .pc-badge{position:absolute;right:14px;top:14px;font-size:12px;font-weight:700;background:rgba(20,22,18,.86);color:#2A1F45;border:1px solid var(--pc);border-radius:999px;padding:4px 11px;backdrop-filter:blur(6px)}
+#v-matchjuo .pc-body{padding:22px 24px 20px;display:flex;flex-direction:column;flex:1}
+#v-matchjuo .pc-meta{display:flex;align-items:center;gap:10px;font-size:12.5px;color:var(--muted-dark)}
+#v-matchjuo .pc-n{font-family:var(--font-mono);color:var(--pc);font-weight:500}
+#v-matchjuo .pc-date{margin-left:auto;font-family:var(--font-mono);font-size:12px}
+#v-matchjuo .pc h3{font-family:var(--font-body);font-size:24px;font-weight:700;letter-spacing:-.01em;margin:8px 0 10px;color:#2A1F45}
+#v-matchjuo .pc-one{font-size:15px;line-height:1.65;color:#6E6759}
+#v-matchjuo .pc-one b{color:#1F1A2E;font-weight:700}
+#v-matchjuo .pc-kpis{display:grid;grid-template-columns:1fr 1fr;margin-top:18px;border-top:1px solid #33372D;border-bottom:1px solid #33372D}
+#v-matchjuo .pc-kpis div{padding:14px 0}
+#v-matchjuo .pc-kpis div+div{padding-left:18px;border-left:1px solid #33372D}
+#v-matchjuo .pc-kpis b{display:block;font-size:24px;font-weight:700;color:var(--pc);letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+#v-matchjuo .pc-kpis span{display:block;font-size:12.8px;color:var(--muted-dark);margin-top:2px}
+#v-matchjuo .pc-foot{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:auto;padding-top:16px;font-size:12.8px;color:var(--muted-dark)}
+#v-matchjuo .pc-go{color:#1F1A2E;font-weight:700;font-size:13.5px;white-space:nowrap}
+#v-matchjuo .pc:hover .pc-go{color:var(--pc)}
+@media (max-width:860px){#v-matchjuo .pcs{grid-template-columns:1fr}#v-matchjuo .hp-head{flex-direction:column;align-items:flex-start}#v-matchjuo .pc-foot{flex-direction:column;align-items:flex-start}}
 #v-matchjuo{--font-display:"Jua","IBM Plex Sans KR",sans-serif;color-scheme:light}
 #v-matchjuo .light{color-scheme:dark}
 #v-matchjuo .hero{background:radial-gradient(60% 70% at 85% 10%,rgba(244,114,182,.18),transparent 60%),radial-gradient(50% 60% at 0% 100%,rgba(139,92,246,.14),transparent 60%),#FBF8FF}
@@ -3478,58 +3599,55 @@ h1,h2,h3,h4,.q,.bigconcl,.ab-card h3{word-break:keep-all}
 </footer>
 </article>
 <article class="view" id="v-home">
-<section style="padding-top:64px">
+<section class="home-pj">
   <div class="wrap">
-    <div class="sec-head">
-      <p class="idx">01 · PROJECTS</p>
+    <div class="hp-head">
       <div>
-        <h2>프로젝트</h2>
+        <p class="hp-eyebrow">SELECTED WORK</p>
+        <h2>업무에 AI를 붙여, 시간을 줄인 프로젝트</h2>
       </div>
+      <p class="hp-count">04 Projects</p>
     </div>
-    <div class="pjs">
-      <a class="pj t-reboot" href="#reboot">
-        <p class="ptag"><span>01</span><span>2026.10.21 – 10.28</span></p>
-        <h3>REBOOT</h3>
-        <p class="one">해외 마케팅팀에 AI를 붙여 <b>담당자 한 명이 하던 조사·콘텐츠 제작·규제 검토를 자동화</b>합니다. 반복 업무는 줄이고 마케팅 기획에 집중하게 만듭니다.</p>
-        <div class="kpis">
-          <div><b class="num">91</b><span>5일간 제작한 게시물</span></div>
-          <div><b class="num">−64.7%</b><span>카드뉴스 1건 제작 시간</span></div>
+    <div class="pcs">
+      <a class="pc" href="#reboot" style="--pc:#B1FF3B">
+        <div class="pc-thumb" style="background:#0B0C0A"><img src="img/reboot-thumb.jpg" alt="REBOOT 화면" loading="lazy" style="object-fit:contain;object-position:center;padding:6% 4%"><span class="pc-badge">KITA 2차 1위</span></div>
+        <div class="pc-body">
+          <p class="pc-meta"><span class="pc-n">01</span><span>해외 마케팅 · AX 대시보드</span><span class="pc-date">2026.10</span></p>
+          <h3>REBOOT</h3>
+          <p class="pc-one">해외 마케팅팀에 AI를 붙여 <b>담당자 한 명이 하던 조사·콘텐츠 제작·규제 검토를 자동화</b>합니다.</p>
+          <div class="pc-kpis"><div><b>−64.7%</b><span>카드뉴스 1건 제작 시간</span></div><div><b>91개</b><span>5일간 제작한 게시물</span></div></div>
+          <p class="pc-foot"><span>팀 6명 · Flask · OpenAI · Claude</span><span class="pc-go">자세히 보기 →</span></p>
         </div>
-        <div class="meta"><span class="chip">간때문이조 · 6명</span><span class="chip">Flask · OpenAI · Claude</span></div>
-        <span class="go">상세 설명 보기 →</span>
       </a>
-      <a class="pj t-pursight" href="#pursight">
-        <p class="ptag"><span>02</span><span>기간 <span class="todo">확인 필요</span></span></p>
-        <h3>PURSIGHT</h3>
-        <p class="one">구매팀에 AI·자동화를 붙여 <b>엑셀로 맞추던 발주량·발주일 계산과 발주서 작성을 대신</b>합니다. 신입도 같은 기준으로 판단하고, 납기 위험을 발주 전에 확인합니다.</p>
-        <div class="kpis">
-          <div><b class="num">5</b><span>STEP 0~4 구매 분석 단계</span></div>
-          <div><b class="num">1</b><span>HTML 파일 하나로 실행</span></div>
+      <a class="pc" href="#pursight" style="--pc:#F76707">
+        <div class="pc-thumb" style="background:#F4F5F7"><img src="img/ps-result.jpg" alt="PURSIGHT 화면" loading="lazy" style="object-fit:cover"></div>
+        <div class="pc-body">
+          <p class="pc-meta"><span class="pc-n">02</span><span>구매 · 발주 자동화</span><span class="pc-date">개인 프로젝트</span></p>
+          <h3>PURSIGHT</h3>
+          <p class="pc-one">구매팀의 <b>발주량·발주일 계산과 공급사별 발주서 작성을 자동화</b>해, 납기 위험을 발주 전에 확인합니다.</p>
+          <div class="pc-kpis"><div><b>STEP 0–4</b><span>계획부터 발주서까지</span></div><div><b>설치 0</b><span>브라우저에서 바로 실행</span></div></div>
+          <p class="pc-foot"><span>1인 개발 · Vanilla JS · Excel · HWPX</span><span class="pc-go">자세히 보기 →</span></p>
         </div>
-        <div class="meta"><span class="chip">웹 버전 · 체험 계정</span><span class="chip">Vanilla JS</span></div>
-        <span class="go">상세 설명 보기 →</span>
       </a>
-      <a class="pj t-blueocean" href="#blueocean">
-        <p class="ptag"><span>03</span><span>2026.09.17 – 09.28</span></p>
-        <h3>Blue Ocean Finder</h3>
-        <p class="one">해외영업·수출 부서에 AI를 붙여 <b>이틀 걸리던 시장 조사를 30초로</b> 줄입니다. 유망국 선정부터 근거 보고서·박람회까지 바로 내부 보고에 쓸 수 있습니다.</p>
-        <div class="kpis">
-          <div><b class="num">−99.98%</b><span>시장 조사 시간 (2일 → 30초)</span></div>
-          <div><b class="num">20개국</b><span>HS 코드 한 번으로 찾는 유망시장</span></div>
+      <a class="pc" href="#blueocean" style="--pc:#3DD9EB">
+        <div class="pc-thumb" style="background:#F4F7FB"><img src="img/bof-home.jpg" alt="Blue Ocean Finder 화면" loading="lazy" style="object-fit:cover"><span class="pc-badge">PM</span></div>
+        <div class="pc-body">
+          <p class="pc-meta"><span class="pc-n">03</span><span>해외영업 · 시장 분석</span><span class="pc-date">2026.09</span></p>
+          <h3>Blue Ocean Finder</h3>
+          <p class="pc-one">수출 부서의 <b>시장 조사를 2일에서 30초로</b> 줄이고, 유망국 선정 근거를 보고서로 바로 제공합니다.</p>
+          <div class="pc-kpis"><div><b>−99.98%</b><span>시장 조사 시간</span></div><div><b>20개국</b><span>HS 코드 한 번으로 선별</span></div></div>
+          <p class="pc-foot"><span>팀 5명 · Flask · UN Comtrade · OpenAI</span><span class="pc-go">자세히 보기 →</span></p>
         </div>
-        <div class="meta"><span class="chip">Flask · UN Comtrade</span><span class="chip">OpenAI</span><span class="chip">시연 영상 · 대시보드 링크</span></div>
-        <span class="go">상세 설명 보기 →</span>
       </a>
-      <a class="pj t-matchjuo" href="#matchjuo">
-        <p class="ptag"><span>04</span><span>기간 <span class="todo">확인 필요</span></span></p>
-        <h3>매칭해 쥬오</h3>
-        <p class="one">인사·채용 부서에 AI를 붙여 <b>지원자와 조직문화의 궁합을 데이터로 비교</b>합니다. 입사 후 부적응으로 인한 조기 퇴사와 채용 미스매치를 줄입니다.</p>
-        <div class="kpis">
-          <div><b class="num">20</b><span>문항 성향 진단</span></div>
-          <div><b class="num">7</b><span>현직자 기업문화 항목</span></div>
+      <a class="pc" href="#matchjuo" style="--pc:#A78BFA">
+        <div class="pc-thumb" style="background:#F6F2FF"><img src="img/mj-hero.jpg" alt="매칭해 쥬오 화면" loading="lazy" style="object-fit:cover"><span class="pc-badge">미완성 DEMO</span></div>
+        <div class="pc-body">
+          <p class="pc-meta"><span class="pc-n">04</span><span>HR · 채용 매칭</span><span class="pc-date">개인 프로젝트</span></p>
+          <h3>매칭해 쥬오</h3>
+          <p class="pc-one">채용 부서가 <b>지원자와 조직문화의 궁합을 데이터로 비교</b>해 채용 미스매치를 줄입니다.</p>
+          <div class="pc-kpis"><div><b>20문항</b><span>업무 성향 진단</span></div><div><b>7가지</b><span>현직자 기업문화 항목</span></div></div>
+          <p class="pc-foot"><span>1인 기획·개발 · Streamlit · Vercel</span><span class="pc-go">자세히 보기 →</span></p>
         </div>
-        <div class="meta"><span class="chip">Streamlit · Vercel</span><span class="chip">스와이프 매칭</span></div>
-        <span class="go">상세 설명 보기 →</span>
       </a>
     </div>
   </div>
