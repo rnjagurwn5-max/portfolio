@@ -825,6 +825,26 @@ h1,h2,h3,h4,.q,.bigconcl,.ab-card h3{word-break:keep-all}
 .qrlink a{color:var(--lime);text-decoration:none;font-weight:700}
 .qrlink a:hover{text-decoration:underline}
 @media (max-width:620px){.qrbox{grid-template-columns:1fr;text-align:center;justify-items:center}.qrimg{width:180px}}
+/* 기여할 수 있는 점 강조 */
+.contrib{margin-top:22px;max-width:60ch;border:0;border-left:5px solid var(--lime);border-radius:4px 14px 14px 4px;padding:18px 22px 16px;background:color-mix(in srgb,var(--lime) 12%,var(--ink-2));box-shadow:0 14px 34px -22px rgba(0,0,0,.6)}
+.contrib b{font-family:var(--font-body);font-size:17px;font-weight:700;letter-spacing:0;color:#fff;margin-bottom:10px}
+.contrib b::before{content:"★ ";color:var(--lime)}
+.contrib ul{counter-reset:ct}
+.contrib li{counter-increment:ct;padding-left:34px;margin:9px 0;font-size:15.8px;color:#F1F2EC;font-weight:500}
+.contrib li::before{content:counter(ct);top:1px;width:22px;height:22px;border-radius:50%;background:var(--lime);color:var(--ink);font-size:12.5px;display:grid;place-items:center;font-weight:700}
+#v-pursight .contrib{background:#FFF1E7;border-left-color:#E8590C}
+#v-pursight .contrib b{color:#1F2328}#v-pursight .contrib b::before{color:#E8590C}
+#v-pursight .contrib li{color:#2B2722}
+#v-pursight .contrib li::before{background:#E8590C;color:#fff}
+#v-blueocean .contrib{background:rgba(61,217,235,.12);border-left-color:#3DD9EB}
+#v-blueocean .contrib b{color:#EAF3FA}#v-blueocean .contrib b::before{color:#3DD9EB}
+#v-blueocean .contrib li{color:#EAF3FA}
+#v-blueocean .contrib li::before{background:#3DD9EB;color:#061829}
+#v-matchjuo .contrib{background:linear-gradient(120deg,#F3EBFF,#FDEBF5);border-left-color:#8B5CF6}
+#v-matchjuo .contrib b{color:#1F1A2E}#v-matchjuo .contrib b::before{color:#F472B6}
+#v-matchjuo .contrib li{color:#2A1F45}
+#v-matchjuo .contrib li::before{background:linear-gradient(135deg,#8B5CF6,#F472B6);color:#fff}
+#v-reboot .contrib b{color:#fff}
 
 #v-pursight{
   
@@ -1597,6 +1617,28 @@ h1,h2,h3,h4,.q,.bigconcl,.ab-card h3{word-break:keep-all}
 #v-pursight .qrlink a{color:var(--lime);text-decoration:none;font-weight:700}
 #v-pursight .qrlink a:hover{text-decoration:underline}
 @media (max-width:620px){#v-pursight .qrbox{grid-template-columns:1fr;text-align:center;justify-items:center}#v-pursight .qrimg{width:180px}}
+#v-pursight .contrib{margin-top:22px;max-width:60ch;border:0;border-left:5px solid var(--lime);border-radius:4px 4px 4px 4px;padding:18px 22px 16px;background:color-mix(in srgb,var(--lime) 12%,var(--ink-2));box-shadow:0 14px 34px -22px rgba(60,45,20,.16)}
+#v-pursight .contrib b{font-family:var(--font-body);font-size:17px;font-weight:700;letter-spacing:0;color:#1C2A38;margin-bottom:10px}
+#v-pursight .contrib b::before{content:"★ ";color:var(--lime)}
+#v-pursight .contrib ul{counter-reset:ct}
+#v-pursight .contrib li{counter-increment:ct;padding-left:34px;margin:9px 0;font-size:15.8px;color:#1F2328;font-weight:500}
+#v-pursight .contrib li::before{content:counter(ct);top:1px;width:22px;height:22px;border-radius:50%;background:var(--lime);color:var(--ink);font-size:12.5px;display:grid;place-items:center;font-weight:700}
+#v-pursight #v-pursight .contrib{background:#FFF1E7;border-left-color:#E8590C}
+#v-pursight #v-pursight .contrib b{color:#1F2328}
+#v-pursight #v-pursight .contrib b::before{color:#E8590C}
+#v-pursight #v-pursight .contrib li{color:#2B2722}
+#v-pursight #v-pursight .contrib li::before{background:#E8590C;color:#1C2A38}
+#v-pursight #v-blueocean .contrib{background:rgba(61,217,235,.12);border-left-color:#3DD9EB}
+#v-pursight #v-blueocean .contrib b{color:#EAF3FA}
+#v-pursight #v-blueocean .contrib b::before{color:#3DD9EB}
+#v-pursight #v-blueocean .contrib li{color:#EAF3FA}
+#v-pursight #v-blueocean .contrib li::before{background:#3DD9EB;color:#061829}
+#v-pursight #v-matchjuo .contrib{background:linear-gradient(120deg,#F3EBFF,#FDEBF5);border-left-color:#8B5CF6}
+#v-pursight #v-matchjuo .contrib b{color:#1F1A2E}
+#v-pursight #v-matchjuo .contrib b::before{color:#F472B6}
+#v-pursight #v-matchjuo .contrib li{color:#2A1F45}
+#v-pursight #v-matchjuo .contrib li::before{background:linear-gradient(135deg,#8B5CF6,#F472B6);color:#1C2A38}
+#v-pursight #v-reboot .contrib b{color:#1C2A38}
 #v-pursight{--font-display:"Space Grotesk","IBM Plex Sans KR",sans-serif;color-scheme:light}
 #v-pursight .light{color-scheme:dark}
 #v-pursight .hero::before{inset:0;height:auto;background-image:linear-gradient(#E9E4D8 1px,transparent 1px),linear-gradient(90deg,#E9E4D8 1px,transparent 1px);background-size:96px 30px;-webkit-mask-image:linear-gradient(100deg,transparent 35%,#000 85%);mask-image:linear-gradient(100deg,transparent 35%,#000 85%)}
@@ -2393,6 +2435,28 @@ h1,h2,h3,h4,.q,.bigconcl,.ab-card h3{word-break:keep-all}
 #v-blueocean .qrlink a{color:var(--lime);text-decoration:none;font-weight:700}
 #v-blueocean .qrlink a:hover{text-decoration:underline}
 @media (max-width:620px){#v-blueocean .qrbox{grid-template-columns:1fr;text-align:center;justify-items:center}#v-blueocean .qrimg{width:180px}}
+#v-blueocean .contrib{margin-top:22px;max-width:60ch;border:0;border-left:5px solid var(--lime);border-radius:4px 21px 21px 4px;padding:18px 22px 16px;background:color-mix(in srgb,var(--lime) 12%,var(--ink-2));box-shadow:0 14px 34px -22px rgba(0,0,0,.6)}
+#v-blueocean .contrib b{font-family:var(--font-body);font-size:17px;font-weight:700;letter-spacing:0;color:#fff;margin-bottom:10px}
+#v-blueocean .contrib b::before{content:"★ ";color:var(--lime)}
+#v-blueocean .contrib ul{counter-reset:ct}
+#v-blueocean .contrib li{counter-increment:ct;padding-left:34px;margin:9px 0;font-size:15.8px;color:#EAF3FA;font-weight:500}
+#v-blueocean .contrib li::before{content:counter(ct);top:1px;width:22px;height:22px;border-radius:50%;background:var(--lime);color:var(--ink);font-size:12.5px;display:grid;place-items:center;font-weight:700}
+#v-blueocean #v-pursight .contrib{background:#FFF1E7;border-left-color:#E8590C}
+#v-blueocean #v-pursight .contrib b{color:#1F2328}
+#v-blueocean #v-pursight .contrib b::before{color:#E8590C}
+#v-blueocean #v-pursight .contrib li{color:#2B2722}
+#v-blueocean #v-pursight .contrib li::before{background:#E8590C;color:#fff}
+#v-blueocean #v-blueocean .contrib{background:rgba(61,217,235,.12);border-left-color:#3DD9EB}
+#v-blueocean #v-blueocean .contrib b{color:#EAF3FA}
+#v-blueocean #v-blueocean .contrib b::before{color:#3DD9EB}
+#v-blueocean #v-blueocean .contrib li{color:#EAF3FA}
+#v-blueocean #v-blueocean .contrib li::before{background:#3DD9EB;color:#061829}
+#v-blueocean #v-matchjuo .contrib{background:linear-gradient(120deg,#F3EBFF,#FDEBF5);border-left-color:#8B5CF6}
+#v-blueocean #v-matchjuo .contrib b{color:#1F1A2E}
+#v-blueocean #v-matchjuo .contrib b::before{color:#F472B6}
+#v-blueocean #v-matchjuo .contrib li{color:#2A1F45}
+#v-blueocean #v-matchjuo .contrib li::before{background:linear-gradient(135deg,#8B5CF6,#F472B6);color:#fff}
+#v-blueocean #v-reboot .contrib b{color:#fff}
 #v-blueocean{--font-display:"Sora","IBM Plex Sans KR",sans-serif}
 #v-blueocean .hero{background:linear-gradient(180deg,#071F36 0%,#061829 100%)}
 #v-blueocean .hero::before{inset:-20% -20% -20% 30%;height:auto;background:radial-gradient(closest-side at 70% 55%,rgba(61,217,235,.20),transparent 70%),repeating-radial-gradient(circle at 70% 55%,rgba(61,217,235,.09) 0 1px,transparent 1px 34px)}
@@ -3178,6 +3242,28 @@ h1,h2,h3,h4,.q,.bigconcl,.ab-card h3{word-break:keep-all}
 #v-matchjuo .qrlink a{color:var(--lime);text-decoration:none;font-weight:700}
 #v-matchjuo .qrlink a:hover{text-decoration:underline}
 @media (max-width:620px){#v-matchjuo .qrbox{grid-template-columns:1fr;text-align:center;justify-items:center}#v-matchjuo .qrimg{width:180px}}
+#v-matchjuo .contrib{margin-top:22px;max-width:60ch;border:0;border-left:5px solid var(--lime);border-radius:4px 21px 21px 4px;padding:18px 22px 16px;background:color-mix(in srgb,var(--lime) 12%,var(--ink-2));box-shadow:0 14px 34px -22px rgba(60,45,20,.16)}
+#v-matchjuo .contrib b{font-family:var(--font-body);font-size:17px;font-weight:700;letter-spacing:0;color:#2A1F45;margin-bottom:10px}
+#v-matchjuo .contrib b::before{content:"★ ";color:var(--lime)}
+#v-matchjuo .contrib ul{counter-reset:ct}
+#v-matchjuo .contrib li{counter-increment:ct;padding-left:34px;margin:9px 0;font-size:15.8px;color:#1F1A2E;font-weight:500}
+#v-matchjuo .contrib li::before{content:counter(ct);top:1px;width:22px;height:22px;border-radius:50%;background:var(--lime);color:var(--ink);font-size:12.5px;display:grid;place-items:center;font-weight:700}
+#v-matchjuo #v-pursight .contrib{background:#FFF1E7;border-left-color:#E8590C}
+#v-matchjuo #v-pursight .contrib b{color:#1F2328}
+#v-matchjuo #v-pursight .contrib b::before{color:#E8590C}
+#v-matchjuo #v-pursight .contrib li{color:#2B2722}
+#v-matchjuo #v-pursight .contrib li::before{background:#E8590C;color:#2A1F45}
+#v-matchjuo #v-blueocean .contrib{background:rgba(61,217,235,.12);border-left-color:#3DD9EB}
+#v-matchjuo #v-blueocean .contrib b{color:#EAF3FA}
+#v-matchjuo #v-blueocean .contrib b::before{color:#3DD9EB}
+#v-matchjuo #v-blueocean .contrib li{color:#EAF3FA}
+#v-matchjuo #v-blueocean .contrib li::before{background:#3DD9EB;color:#061829}
+#v-matchjuo #v-matchjuo .contrib{background:linear-gradient(120deg,#F3EBFF,#FDEBF5);border-left-color:#8B5CF6}
+#v-matchjuo #v-matchjuo .contrib b{color:#1F1A2E}
+#v-matchjuo #v-matchjuo .contrib b::before{color:#F472B6}
+#v-matchjuo #v-matchjuo .contrib li{color:#2A1F45}
+#v-matchjuo #v-matchjuo .contrib li::before{background:linear-gradient(135deg,#8B5CF6,#F472B6);color:#2A1F45}
+#v-matchjuo #v-reboot .contrib b{color:#2A1F45}
 #v-matchjuo{--font-display:"Jua","IBM Plex Sans KR",sans-serif;color-scheme:light}
 #v-matchjuo .light{color-scheme:dark}
 #v-matchjuo .hero{background:radial-gradient(60% 70% at 85% 10%,rgba(244,114,182,.18),transparent 60%),radial-gradient(50% 60% at 0% 100%,rgba(139,92,246,.14),transparent 60%),#FBF8FF}
@@ -3452,7 +3538,7 @@ h1,h2,h3,h4,.q,.bigconcl,.ab-card h3{word-break:keep-all}
       <div>
         <p class="eyebrow">Project Portfolio · 2026.10.21 – 10.28</p>
         <h1>알디콤의 미국 시장 확대를 위한<br><em>리브랜딩</em>과 <em>AX 마케팅 대시보드</em></h1>
-        <p class="lead"><b style="color:#F1F2EC">숙취해소제가 낯선 미국 시장을 위해 브랜드 REBOOT와, 담당자 한 명의 반복 업무를 줄이는 AX 마케팅 대시보드를 만들었습니다.</b> 그 결과 5일 만에 인스타그램 게시물 91개를 제작했고, 카드뉴스 1건 제작 시간을 64.7% 줄였습니다.</p>        <div class="contrib"><b>기여할 수 있는 점</b><ul><li>해외 담당자가 반복 업무 대신 <em>마케팅 기획</em>에 시간을 씀</li><li>아시아계 채널을 넘어 미국 일반 소비자까지 고객을 넓히는 브랜드</li><li>FDA·FTC 광고 규제 위험을 문구 입력 단계에서 바로 점검</li></ul></div>
+        <p class="lead"><b style="color:#F1F2EC">숙취해소제가 낯선 미국 시장을 위해 브랜드 REBOOT와, 담당자 한 명의 반복 업무를 줄이는 AX 마케팅 대시보드를 만들었습니다.</b> 그 결과 5일 만에 인스타그램 게시물 91개를 제작했고, 카드뉴스 1건 제작 시간을 64.7% 줄였습니다.</p>        <div class="contrib"><b>이 프로젝트로 기여할 수 있는 점</b><ul><li>해외 담당자가 반복 업무 대신 <em>마케팅 기획</em>에 시간을 씀</li><li>아시아계 채널을 넘어 미국 일반 소비자까지 고객을 넓히는 브랜드</li><li>FDA·FTC 광고 규제 위험을 문구 입력 단계에서 바로 점검</li></ul></div>
         <div class="meta">
           <span class="chip">한국무역협회 무역 AX 2기 · 2차 미니프로젝트</span>
           <span class="chip">간때문이조 · 6명</span>
@@ -4250,10 +4336,10 @@ try{
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <p class="eyebrow">Project · 구매 의사결정 보조 프로그램</p>
-        <h1>생산계획과 BOM만 올리면<br><em>무엇을 · 얼마나 · 언제</em> 살지<br>계산해 주는 <em>PURSIGHT</em></h1>
+        <p class="eyebrow">Project · 생산계획 → 발주서까지 한 번에</p>
+        <h1><em>PURSIGHT</em><br>구매 의사결정 보조 프로그램</h1>
         <p class="lead"><b>엑셀만 올리면 발주량 계산부터 공급사별 발주서 작성까지 한 번에 끝나는 구매 프로그램입니다.</b> 생산계획 · BOM(자재명세서) · 재고 · 단가표를 일일이 맞춰 보던 계산을 대신하며, 설치 없이 브라우저에서 바로 실행됩니다.</p>
-        <div class="contrib"><b>기여할 수 있는 점</b><ul><li>발주 계산 실수와 납기 지연을 <em>발주 전에</em> 위험도로 미리 확인</li><li>신입도 같은 기준(MOQ·리드타임·최저가)으로 발주 판단</li><li>생산·단가 자료를 외부로 보내지 않고 사내에서 안전하게 사용</li></ul></div>
+        <div class="contrib"><b>이 프로젝트로 기여할 수 있는 점</b><ul><li>발주 계산 실수와 납기 지연을 <em>발주 전에</em> 위험도로 미리 확인</li><li>신입도 같은 기준(MOQ·리드타임·최저가)으로 발주 판단</li><li>생산·단가 자료를 외부로 보내지 않고 사내에서 안전하게 사용</li></ul></div>
         <div class="meta">
           <span class="chip">by HengJu</span>
           <span class="chip">HTML 파일 하나 · 설치·서버 없음</span>
@@ -4701,7 +4787,7 @@ try{
         <p class="eyebrow">Team Project · 2026.09.17 – 09.28</p>
         <h1>HS 코드 6자리로<br>수출 <em>유망시장 20개국</em>을 찾는<br><em>Blue Ocean Finder</em></h1>
         <p class="lead"><b>HS 코드 6자리만 넣으면 수출 유망시장 최대 20개국을 점수로 골라 주는 웹 앱입니다.</b> 국가별 근거 보고서와 박람회 · 산업 뉴스까지 한 화면에서 보여 주어, 여러 사이트를 돌며 이틀 넘게 걸리던 시장 조사를 30초로 줄였습니다.</p>
-        <div class="contrib"><b>기여할 수 있는 점</b><ul><li>중소기업이 별도 조사 비용 없이 <em>진출 후보국</em>을 데이터로 선정</li><li>출처와 근거가 붙은 보고서로 내부 보고를 바로 진행</li><li>박람회 · 뉴스까지 이어져 다음 행동(참가 · 바이어 발굴)으로 연결</li></ul></div>
+        <div class="contrib"><b>이 프로젝트로 기여할 수 있는 점</b><ul><li>중소기업이 별도 조사 비용 없이 <em>진출 후보국</em>을 데이터로 선정</li><li>출처와 근거가 붙은 보고서로 내부 보고를 바로 진행</li><li>박람회 · 뉴스까지 이어져 다음 행동(참가 · 바이어 발굴)으로 연결</li></ul></div>
         <div class="meta">
           <span class="chip">2조 팀 프로젝트</span>
           <span class="chip">Python Flask 웹 앱</span>
@@ -5117,7 +5203,7 @@ try{
         <p class="eyebrow">Project · 회사 매칭 서비스</p>
         <h1>소개팅도 궁합을 보는데,<br>회사는? <em>매칭해 쥬오</em></h1>
         <p class="lead"><b>20문항 성향 진단으로 나와 일하는 방식이 맞는 회사를 찾아 주는, 소개팅 앱 방식의 채용 매칭 서비스입니다.</b> 연봉·복지만 보이는 공고 대신, 현직자가 평가한 회식 · 소통 · 자율성 문화를 궁합 점수로 비교해 추천합니다.</p>
-        <div class="contrib"><b>기여할 수 있는 점</b><ul><li>구직자는 입사 전에 <em>조직문화 궁합</em>을 확인해 맞지 않는 회사를 피함</li><li>기업은 업무 방식이 맞는 인재를 먼저 찾아 채용 미스매치를 줄임</li><li>성격 특성으로 탈락시키지 않는 공정한 매칭 기준</li></ul></div>
+        <div class="contrib"><b>이 프로젝트로 기여할 수 있는 점</b><ul><li>구직자는 입사 전에 <em>조직문화 궁합</em>을 확인해 맞지 않는 회사를 피함</li><li>기업은 업무 방식이 맞는 인재를 먼저 찾아 채용 미스매치를 줄임</li><li>성격 특성으로 탈락시키지 않는 공정한 매칭 기준</li></ul></div>
         <div class="meta">
           <span class="chip">취업준비생 × 조직문화 매칭</span>
           <span class="chip">스와이프 매칭 · AI 궁합 리포트</span>
